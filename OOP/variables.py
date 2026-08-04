@@ -1,0 +1,16 @@
+class Car:
+
+    wheels = 4
+
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+car1 = Car("Toyota", "Corolla")
+car2 = Car("Tesla", "Model 3")
+Car.wheels = 6
+car1.wheels = 8
+
+print(car1.wheels)
+print(car2.wheels)
+print(Car.wheels)
